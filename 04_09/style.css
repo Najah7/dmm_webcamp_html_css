@@ -1,0 +1,68 @@
+/* リセットCSS */
+/* NOTE: box-sizingのデフォルト値は、box-sizing: content-box;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+header {
+    width: 100%;
+    height: 120px;
+    background-color: red;
+  }
+
+
+
+main {
+  width: 840px;
+  height: 1400px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  background-color: blue;
+
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: pink;
+}
+
+.title {
+  width: 100%;
+  height: 70px;
+  background-color: hotpink;
+}
+
+.main-visual {
+  width: 100%;
+  height: 300px;
+  background-color: orange;
+}
+
+.main-visual-content {
+  width: 350px;
+  height: 300px;
+  background-color: gold;
+}
+
+.blog {
+  width: 600px;
+  height: 600px;
+  background-color: limegreen;
+}
+
+.sidebar {
+  width: 240px;
+  height: 600px;
+  background-color: palegreen;
+}
