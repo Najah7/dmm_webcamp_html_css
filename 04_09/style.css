@@ -1,37 +1,30 @@
+/* ============ 共通 ========== */
+
 /* リセットCSS */
 /* NOTE: box-sizingのデフォルト値は、box-sizing: content-box;*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #6c6b6b;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
 
+a {
+  text-decoration: none;
+}
+
+
+/* ============ ヘッダー ========== */
 
 header {
-    width: 100%;
-    height: 120px;
-    text-align: center;
-  }
-
-main {
-  width: 840px;
-  height: 1400px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-
-footer {
-  width: 100%;
-  height: 120px;
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
   text-align: center;
-  line-height: 120px;
-  background-color: #848282;
 }
 
-footer p {
-  color: #fff;
+header .title {
+  font-size: 32px;
 }
 
 nav {
@@ -41,17 +34,7 @@ nav {
   justify-content: center;
 }
 
-.title {
-  width: 100%;
-  height: 70px;
-  font-size: 32px;
-}
-
-.title a{
-    text-decoration: none;
-}
-
-.nav-list{
+.nav-list {
   text-align: center;
   padding: 10px 0;
   margin: 0 auto;
@@ -64,6 +47,7 @@ nav {
 }
 
 
+/* ============ メインビジュアル ========== */
 .main-visual {
   width: 100%;
   height: 300px;
@@ -81,20 +65,90 @@ nav {
 }
 
 .main-visual-text {
-  color: #fff; /* 文字色を白に変更 */
+  color: #fff;
 }
 
 .main-visual-name {
-  margin-top: 30px; /* 上側の外側の余白 */
-  color: #fff; /* 文字色を白に変更 */
+  margin-top: 30px;
+  color: #fff;
 }
 
+/* ============ メイン (ブログ部分) ========== */
+main {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 70px 0;
+}
+
+/* ------------　ブログ部分 -------- */
 .blog {
-  width: 600px;
-  height: 600px;
+  width: 540px;
+  margin-right: 30px;
 }
 
+.blog-heading {
+  border-bottom: 8px solid #f7f7f7;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.blog-box {
+  padding-top: 50px;
+}
+
+.blog-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.blog-image {
+  height: 180px;
+}
+
+.blog-date {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.category {
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: #acabab;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.blog-text {
+  padding: 25px 0 0 30px;
+}
+
+.blog-text-heading {
+  padding-bottom: 15px;
+}
+
+/* ------------　サイドバー部分 -------- */
 .sidebar {
-  width: 240px;
-  height: 600px;
+  width: 230px;
+}
+
+
+/* ============ フッター ========== */
+
+footer {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+footer p {
+  color: #fff;
 }
