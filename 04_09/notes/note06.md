@@ -1,0 +1,15 @@
+# ６章で扱った内容
+- background-image
+- background-size
+- background-position（下記のプロパティを組み合わせて使用することもできる）
+    - top
+    - right
+    - bottom
+    - left
+    - center
+- RGBA
+    - Red
+    - Green
+    - Blue
+    - Alpha：透明度
+- `<br />`
