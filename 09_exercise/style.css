@@ -33,10 +33,6 @@ main {
   background-color: var(--color-container-color);
 }
 
-.step-container:last-child {
-  margin-right: 0;
-}
-
 .step-img{
   height: 150px;
   background-position: bottom;
@@ -71,4 +67,25 @@ main {
 footer {
   height: 50px;
   background-color: var(--color-footer);
+}
+
+@media screen and (max-width: 768px) {
+
+  header, main {
+    width: 100%;
+    display: block;
+  }
+
+  .step-container {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .step-container:first-child {
+    margin-top: 50px;
+  }
+
+  .step-container:last-child {
+    margin-bottom: 50px;
+  }
 }
