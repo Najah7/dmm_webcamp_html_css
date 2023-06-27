@@ -1,0 +1,57 @@
+# Flexレイアウト
+- ブロック要素を横並びや中央寄せにレイアウトする方法は旧レイアウト方法
+- Flexレイアウトの利点
+    - 複雑な内容を上下左右に簡単にレイアウト可能
+    - 高さが消えず、clearfixが不要
+    - HTMLソースはそのままに、CSSのみで順序を入れ替え可能
+    - 中央寄せ、均等分布などの画像ソフトで行なうような整列をHTML上で簡単に実現可能
+    - 親や子の箱のサイズが拡大縮小しても、その空間に応じて柔軟性高くレイアウトが可変する
+- Flexレイアウトの注意点
+    - 古いブラウザでは対応していない
+    - IEでは最新版でも挙動が異なる場合がある
+- Flexのレイアウトの構成要素
+    - Flexコンテナー
+        - Flexレイアウトを行うための親の箱
+        -  並ぶ方向(横・縦) / 横方向の整列方法 / 縦方向の整列方法 / 折り返し方法 などを同時に設定
+    - Flexアイテム
+        - Flexコンテナー内に直接入っている要素は全て(※)自動的にFlexアイテムとなる
+        - Flexアイテムとなった要素は更に 並び順 / 伸縮比率 / 個別の縦位置などを簡単に設定できる
+- Flexコンテナで指定できるプロパティ
+    - `display: flex;`で簡単に横並びを実現可能。指定することで、Flexレイアウトが有効になる。
+    - `flex-direction: row;`で横並びになる。デフォルトは`row`。
+    - `flex-direction: column;`で縦並びになる。
+    - `flex-direction: row-reverse;`で横並びになるが、要素の順番が逆になる。
+    - `flex-direction: column-reverse;`で縦並びになるが、要素の順番が逆になる。
+    - `flex-wrap: nowrap;`で横並びの要素が折り返しにならない。デフォルトは`nowrap`。
+    - `flex-wrap: wrap;`で横並びの要素が折り返しになる。
+    - `flex-wrap: wrap-reverse;`で横並びの要素が折り返しになるが、要素の順番が逆になる。
+    - `flex-flow: row wrap;`: `flex-direction`と`flex-wrap`を同時に指定できる。
+    - `justify-content: flex-start;`で横方向の上寄せになる。デフォルトは`flex-start`。
+    - `justify-content: flex-end;`で横方向の下寄せになる。
+    - `justify-content: center;`で中央寄せになる。（横方向の整列方法）
+    - `justify-content: space-between;`で均等分布になる。
+    - `justify-content: space-around;`で均等分布になるが、要素の間隔が均等になる。
+    - `align-items: stretch;`で縦方向の均等分布になる。デフォルトは`stretch`。
+    - `align-items: flex-start;`で縦方向の上寄せになる。
+    - `align-items: flex-end;`で縦方向の下寄せになる。
+    - `align-items: center;`で縦方向の中央寄せになる。（縦方向の整列方法）
+    - `align-items: baseline;`で縦方向のベースラインになる。
+    - `align-items: stretch;`で縦方向の均等分布になる。
+    - `align-content: stretch;`:　複数行なった際の整列方法を指定。縦方向の均等分布になる。
+    - `align-content: flex-start;`で縦方向の上寄せになる。
+    - `align-content: flex-end;`で縦方向の下寄せになる。
+    - `align-content: center;`で縦方向の中央寄せになる。
+    - `align-content: space-between;`で縦方向の均等分布になる。
+- Flexアイテムで指定できるプロパティ
+    - `order: 0;`で要素の並び順を指定できる。デフォルトは`0`。昇順に並ぶ。
+    - `flex-grow: 0;`でFlexアイテムの横幅の伸びる比率を指定できる。デフォルトは`0`。
+    - `flex-shrink: 1;`でFlexアイテムの横幅の縮む比率を指定できる。デフォルトは`1`。
+    - `flex-basis: auto;`で要素の基本サイズを指定できる。デフォルトは`auto`。
+    - `flex: 0 1 auto;`で`flex-grow`、`flex-shrink`、`flex-basis`を同時に指定できる。
+    - `align-self: auto;`で要素の縦位置を指定できる。デフォルトは`auto`。
+    - `align-self: flex-start;`で要素の縦位置を上寄せに指定できる。
+    - `align-self: flex-end;`で要素の縦位置を下寄せに指定できる。
+    - `align-self: center;`で要素の縦位置を中央寄せに指定できる。
+    - `align-self: baseline;`で要素の縦位置をベースラインに指定できる。
+    - `align-self: stretch;`で要素の縦位置を均等分布に指定できる。
+
